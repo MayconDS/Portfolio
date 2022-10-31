@@ -3,14 +3,9 @@ html {
 }
 
 #navbar {
-  
- 
-    
     width: 290px;
     height: 52px;
     justify-content: center;
-   
-    
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
     display: block;
@@ -42,3 +37,20 @@ ul {
    
     gap: 27px;
 }
+#navbar a {
+    background: transparent;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+  }
+
+  #navbar a:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  #navbar a:active {
+    background: #242459;
+    color: #1f1f38;
+  }

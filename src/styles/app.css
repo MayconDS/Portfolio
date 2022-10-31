@@ -1,9 +1,12 @@
 body {
     background-color: #161616;
 }
+html, body {
+    overflow-x: hidden;
+  }
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    
 }
 section {
     height: 100vh;
