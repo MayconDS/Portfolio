@@ -1,12 +1,12 @@
 .skills {
     position: relative;
-    
+    height: 80vh;
     
   
 }
 .skills h1 {
  
-   
+    margin-bottom: 50px;
     color:#0ba1fd;
     font-size: 40px;
 }

@@ -1,47 +1,17 @@
 .about {
+    margin-top: 10rem;
     background-color:#13131F;    
     position: relative;
+    height: 70vh;
+    display: flex;
     
 }
 
-#bg {
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    
-    left: 0;
-    z-index: 1;
- }
 
 
-.box,h1 {
-    z-index: 1;
-}
-.about::before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    
-    width: 100%;
-    height: 120px;
-    background: linear-gradient(to top, #190738, transparent)
-}
-#moonAbout {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    filter: blur(0.5px);
-    top: 30px;
-    right: 30rem;
-    z-index: 0;
-    transition: all ease-out 0.3s;
-    
-    
-}
 
 .about h1 {
-    transition: all ease-out 0.3s;
+    
     position: absolute;
     z-index: 0;
     top: 30px;
@@ -49,17 +19,9 @@
     color: #0ba1fd;
 }
 
-.about .box {
-    width: 100%;
-    height: 100%;
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
 .about .box p {
-        width: 50%;
+      width: 50%;
     color: #Fff;
 }
 

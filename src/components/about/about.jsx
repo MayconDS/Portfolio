@@ -1,9 +1,5 @@
 import "./about.css";
 
-import bgAbout from "../../utils/bgs/backgroundAbout.png";
-import moonAbout from "../../utils/bgs/moonAbout.webp";
-import { useEffect, useState } from "react";
-
 const About = () => {
   return (
     <section id="about" className="about">

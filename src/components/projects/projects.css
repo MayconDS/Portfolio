@@ -1,16 +1,15 @@
 .projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    text-align: center;
     padding: 25rem;
+   margin-top: -280px;
     background-color: #13131F;
 }
-.title {
-    padding: 0rem 10rem;
-    margin-top: 30px;
-}
-.title h1 {
-    color: white;
+
+.projects h1 {
+    color: #0ba1fd;
+    font-size: 40px;
+    margin-bottom: 70px;
 }
 
 /* Media Queries */
