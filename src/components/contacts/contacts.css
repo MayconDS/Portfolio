@@ -1,0 +1,42 @@
+.contacts {
+    height: 70vh;
+}
+.contacts h1 {
+    margin-bottom: 80px;
+    font-size: 40px;
+    color:#ffffff
+}
+
+.box-links {
+    
+    gap: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.lnk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.lnk svg {
+    border: 1px solid #4db5ff;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.lnk a {
+    color: white;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 1200px) {
+    .box-links {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}

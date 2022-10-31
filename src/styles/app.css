@@ -1,0 +1,35 @@
+body {
+    background-color: #161616;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+section {
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Media Queries */
+
+@media(max-width: 1100px) {
+    .container {
+        padding: 5rem;
+    }
+}
+@media(max-width: 800px) {
+    .container {
+        padding: 2rem;
+    }
+}
+
+
+
