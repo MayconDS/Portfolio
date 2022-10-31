@@ -5,24 +5,6 @@ import Background from "../../utils/bgs/home.webp";
 import { useEffect } from "react";
 
 const Home = () => {
-  useEffect(() => {
-    const Animate = () => {
-      let parallax = document.querySelector(".parallax");
-
-      window.addEventListener("scroll", function () {
-        let value = window.scrollY;
-        if (value < 463) {
-          parallax.style.top = 7 + value * +0.2 + "%";
-          if (scrollY >= 86) {
-            parallax.style.zIndex = -1;
-          } else {
-            parallax.style.zIndex = 1;
-          }
-        }
-      });
-    };
-    Animate();
-  }, [scrollY]);
   return (
     <section id="#" className="home">
       <div className="container">

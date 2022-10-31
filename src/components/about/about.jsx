@@ -6,19 +6,6 @@ import moonAbout from "../../utils/bgs/moonAbout.webp";
 import { useEffect, useState } from "react";
 
 const About = () => {
-  useEffect(() => {
-    const Animate = () => {
-      let moonAbout = document.querySelector("#moonAbout");
-
-      window.addEventListener("scroll", function () {
-        let value = window.scrollY;
-
-        moonAbout.style.top = -45 + (value - 1468) * -0.1 + "%";
-      });
-    };
-    Animate();
-  }, []);
-
   return (
     <section id="about" className="about">
       <img id="bg" src={bgAbout} alt="" />

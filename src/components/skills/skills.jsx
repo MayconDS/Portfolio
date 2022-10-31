@@ -10,19 +10,6 @@ import moonSkills from "../../utils/bgs/moonSkills.webp";
 import { useEffect } from "react";
 
 const Skills = () => {
-  useEffect(() => {
-    const Animate = () => {
-      let moonSkills = document.querySelector("#moonSkills");
-
-      window.addEventListener("scroll", function () {
-        let value = window.scrollY;
-
-        moonSkills.style.top = -45 + (value - 2200) * -0.1 + "%";
-      });
-    };
-    Animate();
-  }, []);
-
   return (
     <section id="skills" className="skills">
       <img id="bgSkills" src={bgSkills} alt="" />
