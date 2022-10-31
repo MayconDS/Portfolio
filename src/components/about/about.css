@@ -48,8 +48,10 @@
     z-index: 0;
     transition: all ease-out 0.3s;
     
+    
 }
 #astronaut {
+  
     width: 950px;
     height: 950px;
     transform: translatey(0px);

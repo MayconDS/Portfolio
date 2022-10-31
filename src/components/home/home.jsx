@@ -1,7 +1,7 @@
 import "./home.css";
 
 import PlanetBlue from "../../utils/bgs/planet_blue.svg";
-import Background from "../../utils/bgs/home.png";
+import Background from "../../utils/bgs/home.webp";
 import { useEffect } from "react";
 
 const Home = () => {
@@ -13,7 +13,6 @@ const Home = () => {
         let value = window.scrollY;
         if (value < 463) {
           parallax.style.top = 7 + value * +0.2 + "%";
-          console.log(this.scrollY);
           if (scrollY >= 86) {
             parallax.style.zIndex = -1;
           } else {

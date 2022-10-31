@@ -5,8 +5,8 @@ import { FaReact } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io5";
 import { TfiHtml5 } from "react-icons/tfi";
 
-import bgSkills from "../../utils/bgs/bgSkills.png";
-import moonSkills from "../../utils/bgs/moonSkills.png";
+import bgSkills from "../../utils/bgs/bgSkills.webp";
+import moonSkills from "../../utils/bgs/moonSkills.webp";
 import { useEffect } from "react";
 
 const Skills = () => {

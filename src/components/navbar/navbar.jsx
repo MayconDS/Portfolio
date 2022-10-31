@@ -8,9 +8,15 @@ import {
   AiOutlineFire,
 } from "react-icons/ai";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
+  const [Theme, setTheme] = useState(true);
+  const SwitchTheme = () => {
+    localStorage.setItem("theme", JSON.stringify(!Theme));
+    setTheme(!Theme);
+  };
+
   const [activeNav, setActiveNav] = useState("#");
   return (
     <nav id="navbar">
@@ -61,6 +67,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+      <button onClick={SwitchTheme}>ON</button>
     </nav>
   );
 };

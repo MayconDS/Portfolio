@@ -2,8 +2,8 @@ import "./about.css";
 
 import Astrounaut from "../../utils/bgs/astronaut.svg";
 import bgAbout from "../../utils/bgs/backgroundAbout.png";
-import moonAbout from "../../utils/bgs/moonAbout.png";
-import { useEffect } from "react";
+import moonAbout from "../../utils/bgs/moonAbout.webp";
+import { useEffect, useState } from "react";
 
 const About = () => {
   useEffect(() => {
