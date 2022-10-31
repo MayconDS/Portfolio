@@ -1,5 +1,5 @@
 body {
-    background-color: #161616;
+    background-color: #13131F;
 }
 html, body {
     overflow-x: hidden;
@@ -15,9 +15,10 @@ section {
 .container {
     height: 100%;
     width: 100%;
-    padding: 10rem;
+    padding:0rem 10rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     
 }
 

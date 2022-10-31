@@ -3,10 +3,7 @@
     align-items: center;
     justify-content: center;
     padding: 25rem;
-    background-image: url('../../utils/bgs/2154.webp');
-    background-position: center;
-    background-size: cover;  
-    
+    background-color: #13131F;
 }
 .title {
     padding: 0rem 10rem;

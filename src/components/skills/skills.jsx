@@ -12,8 +12,6 @@ import { useEffect } from "react";
 const Skills = () => {
   return (
     <section id="skills" className="skills">
-      <img id="bgSkills" src={bgSkills} alt="" />
-      <img id="moonSkills" src={moonSkills} alt="" />
       <div className="container">
         <h1>SKILLS</h1>
         <div className="box-grid-3">
