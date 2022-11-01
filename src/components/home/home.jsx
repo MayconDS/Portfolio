@@ -1,9 +1,10 @@
 import "./home.css";
-import astronaut from "../../utils/bgs/astronaut.svg";
+import astronaut from "../../utils/bgs/header-img.svg";
 
 const Home = () => {
   return (
     <section id="#" className="home">
+      <img id="astronaut" src={astronaut} alt="" srcset="" />
       <div className="profile">
         <h1>
           Olá

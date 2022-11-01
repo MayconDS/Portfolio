@@ -59,6 +59,27 @@
   }
 
 
+#astronaut {
+    position: absolute;
+    z-index: -1;
+    height: 420px;
+    right: 10rem;
+    top: 5rem;
+    animation: float 5s ease infinite;
+} 
+
+@keyframes float {
+    0% {
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(-30px)
+
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
 
 /* Media Queries */
 
@@ -68,11 +89,19 @@
         font-size: 3rem;
         line-height: 43px;
     }
-
+    
     
 }
 @media(max-width:800px) {
     .home {
         padding: 7.5rem 1.5rem;
     }
+    
 } 
+@media(max-width:600px) {
+    .home #astronaut{
+        height: 200px;
+        top: 25rem;
+        left: 5rem;
+    }
+}
