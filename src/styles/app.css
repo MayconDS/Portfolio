@@ -1,6 +1,6 @@
 body {
     background-image: url('../utils/bgs/banner-bg.png');
-	background-size: cover;
+	background-size: 110%;
     background-position: center;
    
 	animation: gradient 15s ease infinite;
@@ -9,10 +9,10 @@ body {
 
 @keyframes gradient {
 	0% {
-		background-position: 30% 50%;
+		background-position: 0% 50%;
 	}
 	50% {
-		background-position: 50% 50%;
+		background-position: 50% 100%;
 	}
 	100% {
 		background-position: 0% 100%;
@@ -42,7 +42,9 @@ section {
 
 /* Media Queries */
 @media(max-width:1200px) {
-
+    body {
+        background-size: cover;
+    }
 }
 @media(max-width: 1100px) {
     .container {

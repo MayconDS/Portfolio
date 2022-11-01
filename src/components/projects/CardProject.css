@@ -1,11 +1,12 @@
 .card-project {
     width:600px;
     height: 367px;
-    display: flex;
+    
+    position: relative;
     flex-direction: column;
     overflow: hidden;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(107, 107, 107, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -20,7 +21,10 @@
     height: 300px
     
 }
-
+.btns {
+  display: flex;
+  gap: 10px;
+}
 
 .links-project h1 {
     color: rgb(255, 255, 255);
@@ -28,14 +32,13 @@
 }
 
  .links-project {
-  
-    left: 10px;
-    display: flex;
-    gap: 10px;
-    position: absolute;
-    align-items: center;
-    bottom: -18px;
    
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    bottom: -60px;
+    left: 5px;
+
     
 }
 
@@ -45,46 +48,37 @@
 }
 
 
-.button {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    height: 2.5rem;
-    padding: 0 2rem;
-    border-radius: 5px;
-    background: #333235;
-    background-size: 400%;
-    color: #fff;
-  }
-  
-  .button:hover::before {
-    transform: scaleX(1);
-  }
-  
-  .button-content {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    width: 100%;
-    height: inherit;
-    border-radius: inherit;
-    background: linear-gradient(
-      82.3deg,
-      rgb(93, 29, 255) 10.8%,
-      rgb(72, 0, 255) 94.3%
-    );
-    transition: all 0.475s;
-  }
+.button a {
+  position: relative;
+  padding: 7px 25px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
 
+.button a:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.button a:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
 
 /* Media Queries */
 
@@ -92,4 +86,18 @@
   .card-project {
     width: 100%;
   }
+}
+@media(max-width: 600px) {
+  .thumb img { width:340px;
+    height: 180px}
+   .card-project {
+    width: 340px;
+    height: 250px;
+   } 
+   .button a {
+    padding: 3px 15px;
+   }
+   .links-project h1 {
+    font-size: 15px;
+   }
 }

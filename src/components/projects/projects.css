@@ -2,11 +2,11 @@
     
     text-align: center;
     padding: 25rem;
-  
+   
 }
 
 .projects h1 {
-    color: #Fff;
+    color: #fff;
     font-size: 40px;
     margin-bottom: 70px;
 }
@@ -22,11 +22,16 @@
 
 @media(max-width: 900px) {
     .projects {
-        padding: 5rem;
+        padding: 4rem;
     }
 }
 @media(max-width: 700px) {
     .projects {
-        padding: 2rem;
+        padding: 6rem;
+    }
+}
+@media(max-width: 600px) {
+    .projects {
+        padding: 4rem;
     }
 }
