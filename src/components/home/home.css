@@ -13,7 +13,11 @@
     font-weight: 600;
 }
 .profile span {
-    color:#0ba1fd
+    color:rgb(70, 138, 255)
+}
+.profile p {
+    color: rgb(210, 210, 210);
+    
 }
 
 .links {
@@ -96,12 +100,14 @@
     .home {
         padding: 7.5rem 1.5rem;
     }
+
     
 } 
 @media(max-width:600px) {
     .home #astronaut{
-        height: 200px;
-        top: 25rem;
+        height: 120px;
+        top: 3rem;
         left: 5rem;
     }
+    .profile p {width: 100%;}
 }

@@ -1,25 +1,18 @@
 .about {
     margin-top: 10rem;
     position: relative;
-   
+
     display: flex;
     
 }
 
 
 
-
-.about h1 {
-    
-    position: absolute;
-    z-index: 0;
-    top: 30px;
-    font-size: 48px;
+h1 {
     color: #fff;
+    font-size:40px
 }
-
-
-.about .box p {
+ p {
       width: 50%;
     color: #Fff;
 }
