@@ -1,5 +1,22 @@
 body {
-    background-color: #13131F;
+    background-image: url('../utils/bgs/banner-bg.png');
+	background-size: cover;
+    background-position: center;
+   
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 html, body {
     overflow-x: hidden;
@@ -24,7 +41,9 @@ section {
 }
 
 /* Media Queries */
+@media(max-width:1200px) {
 
+}
 @media(max-width: 1100px) {
     .container {
         padding: 5rem;
@@ -32,7 +51,7 @@ section {
 }
 @media(max-width: 800px) {
     .container {
-        padding: 2rem;
+        padding: 1.5rem;
     }
 }
 

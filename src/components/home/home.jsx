@@ -1,4 +1,5 @@
 import "./home.css";
+import astronaut from "../../utils/bgs/astronaut.svg";
 
 const Home = () => {
   return (

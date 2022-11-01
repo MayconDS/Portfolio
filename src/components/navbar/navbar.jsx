@@ -17,7 +17,7 @@ const Navbar = () => {
       <ul>
         <li>
           <a
-            href="#"
+            href="##"
             onClick={() => setActiveNav("#")}
             className={activeNav === "#" ? "active" : ""}
           >

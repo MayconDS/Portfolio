@@ -1,8 +1,9 @@
 .home {
-    background-color:#13131F;
+    background-position: center;
+    background-size: cover;
     position: relative;
     padding: 7.5rem 5rem;
-    height: 65vh;
+   
 }
 
 .profile h1 {
@@ -67,5 +68,11 @@
         font-size: 3rem;
         line-height: 43px;
     }
+
     
 }
+@media(max-width:800px) {
+    .home {
+        padding: 7.5rem 1.5rem;
+    }
+} 

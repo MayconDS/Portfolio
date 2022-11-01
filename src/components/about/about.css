@@ -1,6 +1,5 @@
 .about {
     margin-top: 10rem;
-    background-color:#13131F;    
     position: relative;
     height: 70vh;
     display: flex;
@@ -16,7 +15,7 @@
     z-index: 0;
     top: 30px;
     font-size: 48px;
-    color: #0ba1fd;
+    color: #fff;
 }
 
 
