@@ -66,18 +66,21 @@ const Skills = () => {
                   {" "}
                   <MdOutlineVerified /> NODEJS
                 </span>
+                <span id="beginner">Beginner</span>
               </div>
               <div className="mongodb language">
                 <span>
                   {" "}
                   <MdOutlineVerified /> MongoDB
                 </span>
+                <span id="beginner">Beginner</span>
               </div>
               <div className="python language">
                 <span>
                   {" "}
                   <MdOutlineVerified /> Python
                 </span>
+                <span id="beginner">Beginner</span>
               </div>
             </div>
           </div>

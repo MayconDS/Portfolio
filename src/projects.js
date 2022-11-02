@@ -1,19 +1,19 @@
 const projects = [
   {
     img: 'https://raw.githubusercontent.com/MayconDS/images/main/Weather.png',
-    title: 'WeatherApp',
+    title: 'WEATHERAPP',
     description:
       'WeatherApp app de previsões climáticas e informações meteorológicas',
   },
   {
     img: 'https://raw.githubusercontent.com/MayconDS/images/main/Cloneyt.png',
-    title: 'Clone Youtube',
+    title: 'CLONE YOUTUBE',
     description:
       'Clone da plataforma Youtube com a possibilidade de assistir videos',
   },
   {
     img: 'https://raw.githubusercontent.com/MayconDS/images/main/HBOMAX.png',
-    title: 'Clone HBOMAX',
+    title: 'CLONE HBOMAX',
     description:
       'Clone da plataforma HBOMAX buscando informações sobre filmes/series é sistema de login',
   },
