@@ -2,10 +2,10 @@
     margin-top: 20rem;
     display: flex;
     flex-direction: column;;
-    height: 65vh;
-  
+    height: 100%;
+    position: relative;
     align-items: center;
-    background: linear-gradient(to top, rgb(48, 90, 228), rgb(60, 106, 255));
+    background-color: #3586FF; 
 }
 .container-contact {
    
@@ -73,6 +73,10 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
+    transition: all ease-in-out .4s;
+}
+.lnk svg:hover {
+    transform: translateY(-10px);
 }
 .lnk a {
     color: white;
@@ -86,6 +90,59 @@
     font-size: 12px;
 }
 
+.contacts .wave {
+    position: absolute;
+    background: url('../../utils/bgs/wave.png');
+    height: 100px;
+    width:100%;
+    top: -100px;
+    left: 0;
+    background-size: 1000px 100px;
+    
+    
+}
+.contacts .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite
+}
+.contacts .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite
+}
+
+.contacts .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite
+}
+.contacts .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite
+}
+
+@keyframes animateWave {
+    0%{
+        background-postion-x: 0px
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes animateWave_02 {
+    0%{
+        background-postion-x: 0px
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
 /* Media Queries */
 
 @media(max-width: 1200px) {

@@ -7,7 +7,13 @@ import { FiGithub } from "react-icons/fi";
 
 const Contacts = () => {
   return (
-    <section id="contacts" className="contacts">
+    <footer id="contacts" className="contacts">
+      <div className="waves">
+        <div id="wave1" className="wave"></div>
+        <div id="wave2" className="wave"></div>
+        <div id="wave3" className="wave"></div>
+        <div id="wave4" className="wave"></div>
+      </div>
       <h1>CONTACTS</h1>
       <div className="container-contact">
         <div className="box-contact">
@@ -55,7 +61,7 @@ const Contacts = () => {
         </div>
       </div>{" "}
       <span id="copy">© Maycon Douglas. All rights reserved.</span>
-    </section>
+    </footer>
   );
 };
 
