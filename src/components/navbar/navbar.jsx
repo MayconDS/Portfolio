@@ -24,15 +24,7 @@ const Navbar = () => {
             <AiOutlineHome />
           </a>
         </li>
-        <li>
-          <a
-            href="#about"
-            onClick={() => setActiveNav("#about")}
-            className={activeNav === "#about" ? "active" : ""}
-          >
-            <AiOutlineUser />
-          </a>
-        </li>
+
         <li>
           <a
             href="#skills"
