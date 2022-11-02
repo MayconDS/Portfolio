@@ -32,7 +32,13 @@
     gap: 30px;
     align-items: center;
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+    border: 1px solid rgb(29, 29, 29);
+    transition: all  ease-out .4s;
+}
+.skills .box-skills:hover {
+    background: transparent;
+    border: 1px solid  rgb(61, 106, 255)
 }
 .skills .box-skills h1{
     font-size: 22px;
