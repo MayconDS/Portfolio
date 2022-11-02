@@ -54,6 +54,7 @@ const Contacts = () => {
           </div>
         </div>
       </div>{" "}
+      <span id="copy">© Maycon Douglas. All rights reserved.</span>
     </section>
   );
 };
