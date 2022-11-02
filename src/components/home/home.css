@@ -1,5 +1,8 @@
 .home {
+    background-image: url('../../utils/bgs/banner-bg.png');
+
     background-position: center;
+    height: 100vh;
     background-size: cover;
     position: relative;
     padding: 7.5rem 5rem;
@@ -11,6 +14,9 @@
     font-size: 4rem;
     line-height: 4.3rem;
     font-weight: 600;
+
+   
+   
 }
 .profile span {
     color:rgb(70, 138, 255)
@@ -65,12 +71,27 @@
 
 #astronaut {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     height: 420px;
     right: 10rem;
     top: 5rem;
     animation: float 5s ease infinite;
 } 
+
+.shadow-horizontal {
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+    background: linear-gradient(to left, #111 2%, transparent 70%);
+
+   
+    justify-content: center;
+    left: 0;
+    top: 0;
+    position: absolute;
+    
+}
 
 @keyframes float {
     0% {
@@ -110,4 +131,7 @@
         left: 5rem;
     }
     .profile p {width: 100%;}
+    .shadow-horizontal {
+        display: none;
+    }
 }

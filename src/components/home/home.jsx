@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <section id="#" className="home">
       <img id="astronaut" src={astronaut} alt="" srcset="" />
+      <div className="shadow-horizontal"></div>
       <div className="profile">
         <h1>
           Olá

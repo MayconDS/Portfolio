@@ -1,4 +1,7 @@
-
+.contacts {
+    margin-top: 10rem;
+    height: 100vh;
+}
 .contacts h1 {
     margin-bottom: 80px;
     font-size: 40px;
@@ -36,5 +39,10 @@
     .box-links {
         grid-template-columns: 1fr 1fr;
         gap: 30px;
+    }
+}
+@media(max-width: 800px) {
+    .contacts {
+        margin-top: 55rem;
     }
 }

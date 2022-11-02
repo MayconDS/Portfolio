@@ -1,23 +1,11 @@
 body {
-    background-image: url('../utils/bgs/banner-bg.png');
-	background-size: 110%;
-    background-position: center;
+    background-color: rgb(18, 18, 18);
    
 	animation: gradient 15s ease infinite;
 	height: 100vh;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 50% 100%;
-	}
-	100% {
-		background-position: 0% 100%;
-	}
-}
+
 html, body {
     overflow-x: hidden;
   }
@@ -28,7 +16,11 @@ html {
 section {
     height: 100vh;
 }
-
+.App {
+    display: flex;
+    flex-direction: column;
+    
+}
 .container {
     height: 100%;
     width: 100%;

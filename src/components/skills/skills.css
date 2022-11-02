@@ -1,7 +1,5 @@
 .skills {
-    position: relative;
- 
-    
+    height: 100vh;
   
 }
 .skills h1 {
@@ -84,18 +82,12 @@
 }
 
 /* Media Queries */
-@media(max-width: 1000px) {
-    #moonSkills {
-        right: 90px;
-    }
-}
+
 @media (max-width: 720px) {
     .skills .box-grid-3 {
         grid-template-columns: 1fr 1fr;
     }
-    #moonSkills {
-        right: 30px;
-    }
+
     .skills .language a svg {
         width: 70px;
         height: 70px;

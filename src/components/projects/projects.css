@@ -1,8 +1,6 @@
 .projects {
-    
-    text-align: center;
-    padding: 25rem;
-   
+    margin-top: 20rem;
+    height: 100vh;
 }
 
 .projects h1 {
@@ -11,27 +9,22 @@
     margin-bottom: 70px;
 }
 
+.box-grid-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
 /* Media Queries */
 
-@media(max-width: 1200px) {
-    .projects {
-        padding: 10rem;
+@media(max-width: 800px) {
+    .box-grid-projects {
+        grid-template-columns: 1fr 
+      
     }
-}
+    .projects {
+        margin-top: 1050px;
+       
+    }
 
-
-@media(max-width: 900px) {
-    .projects {
-        padding: 4rem;
-    }
-}
-@media(max-width: 700px) {
-    .projects {
-        padding: 6rem;
-    }
-}
-@media(max-width: 600px) {
-    .projects {
-        padding: 4rem;
-    }
 }
