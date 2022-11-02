@@ -113,6 +113,11 @@
         flex-direction: column;
     }
 }
-@media(max-width: 800px) {
-  
+@media(max-width: 500px) {
+    .box-links {
+        width: 80%;
+    }
+    .box-contact{
+        width: 80%;
+       }
 }
