@@ -109,7 +109,7 @@
 }
 @media(max-width: 900px) {
     .contacts {
-        height: 100vh;
+        height: 100%;
     }
     .box-contact{
         width: 90%;
