@@ -2,96 +2,91 @@
     height: 100vh;
   
 }
+#title-skills {
+    border-bottom: 2px solid rgb(61, 106, 255);
+
+}
 .skills h1 {
- 
     margin-bottom: 50px;
     color:#fff;
     font-size: 40px;
 }
-.skills .box-grid-3 {
+.skills .box-grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px 120px;
+    gap: 15px;
     
 }
 
-.skills .language {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.skills .language a svg {
-    width: 120px;
-    height: 120px;
-    color: #ffffff;
-    border-radius: 4px;
-   display: block;
-   
-}
-
-    
-.skills .box-grid-3 span {
+.skills .box-grid-2 span {
     color: #fff;
     font-size: 20px;
     font-weight:500;
-}
-.skills .box-grid-3 #text-blue {
-    color: rgb(61, 106, 255);
-    font-weight:400;
-    font-size: 16px;
     
 }
 
-/* PARALLAX */
-#moonSkills {
-    width: 150px;
-    position: absolute;
-   
-    width: 150px;
-   
-   
-    top: 30px;
-    right: 340px;
-    z-index: -2;
-    transition: all ease-out 0.3s;
-    animation: rotate 5s ease-in-out infinite
-
+.skills .box-skills {
+    background-color: rgb(29, 29, 29);
+    padding: 5rem 8rem;
+    border-radius: 12px;
+    gap: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;;
 }
-#bgSkills {
-    position: absolute;
+.skills .box-skills h1{
+    font-size: 22px;
+    color: rgb(80, 156, 255)
+}
+.skills .box-skills .experience {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 3rem;
     
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    z-index: -1;
 }
 
+.skills .language span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(20deg);
-
-    }
-    100%{
-        transform: rotate(0deg);
-    }
+}
+.skills .language svg {
+    color: rgb(0, 166, 255);
 }
 
+.skills #beginner {
+    color: rgb(169, 168, 168);
+    font-size: 12px;
+    margin-left: 30px;
+    font-weight: 200;
+}
 /* Media Queries */
-
-@media (max-width: 720px) {
-    .skills .box-grid-3 {
-        grid-template-columns: 1fr 1fr;
+@media(max-width: 1200px) {
+    .skills .box-skills {
+        padding: 3rem 6rem;
     }
-
-    .skills .language a svg {
-        width: 70px;
-        height: 70px;
-       
-       
+}
+@media(max-width: 1100px) {
+    .skills .box-skills {
+        padding: 2rem 3rem;
+    }
+}
+@media(max-width: 900px) {
+    .skills .box-skills {
+        padding: 2rem 2rem;
+    }
+}
+@media(max-width: 970px) {
+    .skills {
+        margin-top: 50px;
+    }
+    .skills .box-grid-2 {
+        grid-template-columns: 1fr ;
+    }
+    .skills .box-skills {
+        padding: 2rem 3rem;
     }
 }

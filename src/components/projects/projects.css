@@ -2,8 +2,11 @@
     margin-top: 20rem;
     height: 100vh;
 }
-
+#title-project {
+    border-bottom: 2px solid rgb(61, 106, 255);;
+}
 .projects h1 {
+    
     color: #fff;
     font-size: 40px;
     margin-bottom: 70px;
@@ -16,7 +19,11 @@
 }
 
 /* Media Queries */
-
+@media(max-width: 975px) {
+    .projects {
+        margin-top: 25rem;
+    }
+}
 @media(max-width: 800px) {
     .box-grid-projects {
         grid-template-columns: 1fr 

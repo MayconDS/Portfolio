@@ -4,6 +4,7 @@ import { SiCss3, SiJavascript, SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io5";
 import { TfiHtml5 } from "react-icons/tfi";
+import { MdOutlineVerified } from "react-icons/md";
 
 import { useEffect } from "react";
 
@@ -11,46 +12,74 @@ const Skills = () => {
   return (
     <section id="skills" className="skills">
       <div className="container">
-        <h1>SKILLS</h1>
-        <div className="box-grid-3">
-          <div className="html language">
-            <a href="">
-              <TfiHtml5 />
-            </a>
+        <h1 id="title-skills">SKILLS</h1>
+        <div className="box-grid-2">
+          <div className="frontend box-skills">
+            <h1>Frontend Development</h1>
+            <div className="experience">
+              <div className="html language">
+                <span>
+                  {" "}
+                  <MdOutlineVerified /> HTML
+                </span>
+              </div>
+              <div className="css language">
+                <span>
+                  {" "}
+                  <MdOutlineVerified /> CSS
+                </span>
+              </div>
 
-            <span>HTML</span>
+              <div className="js language">
+                <span>
+                  {" "}
+                  <MdOutlineVerified /> JAVASCRIPT
+                </span>
+              </div>
+              <div className="sass language">
+                <span>
+                  {" "}
+                  <MdOutlineVerified /> SASS
+                </span>
+                <span id="beginner">Beginner</span>
+              </div>
+              <div className="reactjs language">
+                <span>
+                  {" "}
+                  <MdOutlineVerified /> REACTJS
+                </span>
+              </div>
+              <div className="typescript language">
+                <span>
+                  {" "}
+                  <MdOutlineVerified /> TYPESCRIPT
+                </span>
+                <span id="beginner">Beginner</span>
+              </div>
+            </div>
           </div>
-          <div className="css language">
-            <a href="">
-              <SiCss3 />
-            </a>
-            <span>CSS</span>
-          </div>
-          <div className="js language">
-            <a href="">
-              <SiJavascript />
-            </a>
-            <span>JAVASCRIPT</span>
-          </div>
-          <div className="reactjs language">
-            <a href="">
-              <FaReact />
-            </a>
-            <span>REACTJS</span>
-          </div>
-          <div className="typescript language">
-            <a href="">
-              <SiTypescript />
-            </a>
-            <span>TYPESCRIPT</span>
-            <span id="text-blue">Estudando</span>
-          </div>
-          <div className="node language">
-            <a href="">
-              <IoLogoNodejs />
-            </a>
-            <span>NODEJS</span>
-            <span id="text-blue">Estudando</span>
+          <div className="backend box-skills">
+            <h1>Backend Development</h1>
+            <div className="experience">
+              <div className="node language">
+                <span>
+                  {" "}
+                  <MdOutlineVerified /> NODEJS
+                </span>
+              </div>
+              <div className="mongodb language">
+                <span>
+                  {" "}
+                  <MdOutlineVerified /> MongoDB
+                </span>
+              </div>
+              <div className="python language">
+                <span>
+                  {" "}
+                  <MdOutlineVerified /> Python
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

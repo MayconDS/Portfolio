@@ -5,7 +5,8 @@
 .contacts h1 {
     margin-bottom: 80px;
     font-size: 40px;
-    color:#Fff
+    color:#Fff;
+    border-bottom: 2px solid rgb(61, 106, 255);
 }
 
 .box-links {
