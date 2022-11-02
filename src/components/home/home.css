@@ -125,6 +125,10 @@
     
 } 
 @media(max-width:600px) {
+    .home {
+        background-size: 1645px;
+    }
+
     .home #astronaut{
         height: 120px;
         top: 3rem;

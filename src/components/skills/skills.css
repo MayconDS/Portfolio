@@ -90,3 +90,8 @@
         padding: 2rem 3rem;
     }
 }
+@media(max-width: 500px) {
+    .skills .box-skills {
+        padding: 1.5rem 2.5rem;
+    }
+}
