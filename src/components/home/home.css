@@ -126,7 +126,7 @@
 } 
 @media(max-width:600px) {
     .home {
-        background-size: 1945px;
+        background-size: 1645px;
     }
 
     .home #astronaut{
@@ -137,5 +137,10 @@
     .profile p {width: 100%;}
     .shadow-horizontal {
         display: none;
+    }
+}
+@media(max-width:500px) {
+    .home {
+        background-size: 1965px;
     }
 }
