@@ -1,36 +1,83 @@
 .contacts {
-    margin-top: 10rem;
-    height: 100vh;
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;;
+    height: 65vh;
+  
+    align-items: center;
+    background: linear-gradient(to top, rgb(48, 90, 228), rgb(60, 106, 255));
 }
+.container-contact {
+   
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.box-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.box-contact input {
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    height :64px;
+    width: 100%;
+}
+.box-contact textarea {
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 4px;
+}
+.box-contact button {
+    background-color: rgba(0, 255, 106, 0.894);
+    outline: 0;
+    border: none;
+    border-radius: 4px;
+    height: 46px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
 .contacts h1 {
     margin-bottom: 80px;
     font-size: 40px;
     color:#Fff;
-    border-bottom: 2px solid rgb(61, 106, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .box-links {
-    
-    gap: 120px;
+   
+    width: 100vh;
+    gap: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     
 }
 .lnk {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .lnk svg {
-    border: 1px solid rgb(61, 106, 255);
+    border: 1px solid rgb(255, 255, 255);
     padding: 5px;
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
 }
 .lnk a {
     color: white;
+    font-size: 14px;
+    
 }
 
 
@@ -42,8 +89,30 @@
         gap: 30px;
     }
 }
-@media(max-width: 800px) {
-    .contacts {
-        margin-top: 55rem;
+@media(max-width: 1150px) {
+    .box-links {width: 80vh;}
+   .box-contact{
+    width: 80%;
+   }
+}
+
+@media(max-width: 1000px) {
+    .box-links {width: 60vh;}
+    .box-contact{
+     width: 60%;
     }
+}
+@media(max-width: 900px) {
+    .contacts {
+        height: 100vh;
+    }
+    .box-contact{
+        width: 90%;
+       }
+    .container-contact {
+        flex-direction: column;
+    }
+}
+@media(max-width: 800px) {
+  
 }

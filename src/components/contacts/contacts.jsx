@@ -8,8 +8,20 @@ import { FiGithub } from "react-icons/fi";
 const Contacts = () => {
   return (
     <section id="contacts" className="contacts">
-      <div className="container">
-        <h1>CONTACTS</h1>
+      <h1>CONTACTS</h1>
+      <div className="container-contact">
+        <div className="box-contact">
+          <input type="text" placeholder="Digite seu nome" />
+          <input type="email" name="" id="" placeholder="Digite seu E-mail" />
+          <textarea
+            placeholder="Mensagem"
+            name=""
+            id=""
+            cols="40"
+            rows="5"
+          ></textarea>
+          <button>ENVIAR</button>
+        </div>
         <div className="box-links">
           <div className="email lnk">
             <a href="">
@@ -41,7 +53,7 @@ const Contacts = () => {
             <a href="">@mayconds</a>
           </div>
         </div>
-      </div>
+      </div>{" "}
     </section>
   );
 };
