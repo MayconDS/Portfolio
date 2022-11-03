@@ -17,7 +17,7 @@ const Navbar = () => {
       <ul>
         <li>
           <a
-            href="##"
+            href="#"
             onClick={() => setActiveNav("#")}
             className={activeNav === "#" ? "active" : ""}
           >
@@ -28,7 +28,7 @@ const Navbar = () => {
         <li>
           <a
             href="#skills"
-            onClick={() => setActiveNav("#experience")}
+            onClick={() => setActiveNav("#skills")}
             className={activeNav === "#experience" ? "active" : ""}
           >
             <AiOutlineCode />
@@ -37,8 +37,8 @@ const Navbar = () => {
         <li>
           <a
             href="#projects"
-            onClick={() => setActiveNav("#services")}
-            className={activeNav === "#services" ? "active" : ""}
+            onClick={() => setActiveNav("#projects")}
+            className={activeNav === "#projects" ? "active" : ""}
           >
             <AiOutlineFire />
           </a>
@@ -46,8 +46,8 @@ const Navbar = () => {
         <li>
           <a
             href="#contacts"
-            onClick={() => setActiveNav("#contact")}
-            className={activeNav === "#contact" ? "active" : ""}
+            onClick={() => setActiveNav("#contacts")}
+            className={activeNav === "#contacts" ? "active" : ""}
           >
             <AiOutlinePhone />
           </a>

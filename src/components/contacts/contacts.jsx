@@ -1,11 +1,51 @@
-import "./contacts.css";
+import emailjs from "@emailjs/browser";
 
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlinePhone } from "react-icons/ai";
 import { GrLinkedinOption } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
 
+import { useState } from "react";
+
+import "./contacts.css";
+
 const Contacts = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    if (name == "" || email == "" || message == "") {
+      alert("Preencha todos os campos!!");
+      return;
+    }
+
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+    };
+
+    emailjs
+      .send(
+        "service_apsfl5k",
+        "template_onxilc7",
+        templateParams,
+        "Pm13dir6pOY6H_r1w"
+      )
+      .then(
+        (response) => {
+          console.log("Email enviado", response.text, response.status);
+          alert("Email enviado!");
+        },
+        (err) => {
+          console.log("Error: ", err);
+        }
+      );
+  }
+
   return (
     <footer id="contacts" className="contacts">
       <div className="waves">
@@ -16,18 +56,32 @@ const Contacts = () => {
       </div>
       <h1>CONTACTS</h1>
       <div className="container-contact">
-        <div className="box-contact">
-          <input type="text" placeholder="Digite seu nome" />
-          <input type="email" name="" id="" placeholder="Digite seu E-mail" />
+        <form onSubmit={(e) => sendEmail(e)}>
+          <input
+            type="text"
+            placeholder="Digite seu nome"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Digite seu E-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <textarea
             placeholder="Mensagem"
             name=""
             id=""
             cols="40"
             rows="5"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           ></textarea>
-          <button>ENVIAR</button>
-        </div>
+          <input className="button-form" type="submit" value="Enviar" />
+        </form>
         <div className="box-links">
           <div className="email lnk">
             <a href="">
