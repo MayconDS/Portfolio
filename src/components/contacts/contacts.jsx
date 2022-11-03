@@ -88,7 +88,9 @@ const Contacts = () => {
               <HiOutlineMail />
             </a>
             <span>E-MAIL</span>
-            <a href="">maycondouglaszzlk@gmail.com</a>
+            <a href="mailto:maycondouglaszzlk@gmail.com">
+              maycondouglaszzlk@gmail.com
+            </a>
           </div>
 
           <div className="telephone lnk">
@@ -96,21 +98,30 @@ const Contacts = () => {
               <AiOutlinePhone />
             </a>
             <span>TELEFONE</span>
-            <a href="">(84) 98191-6377</a>
+            <a target="_blank" href="https://wa.me/+5584981916377">
+              (84) 98191-6377
+            </a>
           </div>
           <div className="linkedin lnk">
             <a href="">
               <GrLinkedinOption />
             </a>
             <span>LINKEDIN</span>
-            <a href="">@maycondouglasss</a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/maycondouglasss/"
+            >
+              @maycondouglasss
+            </a>
           </div>
           <div className="github lnk">
             <a href="">
               <FiGithub />
             </a>
             <span>GITHUB</span>
-            <a href="">@mayconds</a>
+            <a target="_blank" href="https://github.com/MayconDS">
+              @mayconds
+            </a>
           </div>
         </div>
       </div>{" "}
