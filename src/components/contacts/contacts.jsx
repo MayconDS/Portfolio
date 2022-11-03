@@ -84,7 +84,7 @@ const Contacts = () => {
         </form>
         <div className="box-links">
           <div className="email lnk">
-            <a href="">
+            <a href="mailto:maycondouglaszzlk@gmail.com">
               <HiOutlineMail />
             </a>
             <span>E-MAIL</span>
@@ -94,7 +94,7 @@ const Contacts = () => {
           </div>
 
           <div className="telephone lnk">
-            <a href="">
+            <a target="_blank" href="https://wa.me/+5584981916377">
               <AiOutlinePhone />
             </a>
             <span>TELEFONE</span>
@@ -103,7 +103,7 @@ const Contacts = () => {
             </a>
           </div>
           <div className="linkedin lnk">
-            <a href="">
+            <a href="https://www.linkedin.com/in/maycondouglasss/">
               <GrLinkedinOption />
             </a>
             <span>LINKEDIN</span>
@@ -115,7 +115,7 @@ const Contacts = () => {
             </a>
           </div>
           <div className="github lnk">
-            <a href="">
+            <a target="_blank" href="https://github.com/MayconDS">
               <FiGithub />
             </a>
             <span>GITHUB</span>

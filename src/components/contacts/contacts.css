@@ -153,14 +153,14 @@ form .button-form {
 }
 @media(max-width: 1150px) {
     .box-links {width: 80vh;}
-   .box-contact{
+   form{
     width: 80%;
    }
 }
 
 @media(max-width: 1000px) {
     .box-links {width: 60vh;}
-    .box-contact{
+    form{
      width: 60%;
     }
 }
@@ -168,7 +168,7 @@ form .button-form {
     .contacts {
         height: 100%;
     }
-    .box-contact{
+    form{
         width: 90%;
        }
     .container-contact {
@@ -179,7 +179,7 @@ form .button-form {
     .box-links {
         width: 80%;
     }
-    .box-contact{
+    form{
         width: 80%;
        }
 }
