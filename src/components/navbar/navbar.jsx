@@ -8,7 +8,7 @@ import {
   AiOutlineFire,
 } from "react-icons/ai";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -17,7 +17,7 @@ const Navbar = () => {
       <ul>
         <li>
           <a
-            href="#"
+            href="##"
             onClick={() => setActiveNav("#")}
             className={activeNav === "#" ? "active" : ""}
           >

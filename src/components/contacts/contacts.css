@@ -41,8 +41,11 @@ form .button-form {
     color: white;
     cursor: pointer;
     font-weight: bold;
+    transition: all ease 0.3s;
 }
-
+form .button-form:hover {
+    filter: brightness(90%)
+}
 
 
 .contacts h1 {

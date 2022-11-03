@@ -1,6 +1,7 @@
 .projects {
     margin-top: 20rem;
     height: 100%;
+    background-color: #09090b;
 }
 #title-project {
     border-bottom: 2px solid rgb(61, 106, 255);;

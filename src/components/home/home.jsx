@@ -1,13 +1,15 @@
-import "./home.css";
+import { typeWrite } from "../typewriter";
+
 import astronaut from "../../utils/bgs/header-img.svg";
 
+import "./home.css";
 const Home = () => {
   return (
     <section id="#" className="home">
       <img id="astronaut" src={astronaut} alt="" srcset="" />
       <div className="shadow-horizontal"></div>
       <div className="profile">
-        <h1>
+        <h1 className="typewriter">
           Olá
           <br /> eu sou <span>Maycon</span>,
           <br />
