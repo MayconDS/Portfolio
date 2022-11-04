@@ -32,8 +32,19 @@ section {
     
 }
 
-
-
+body::-webkit-scrollbar {
+    width: 12px;              
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(12, 12, 12);        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 106, 255);    
+    border-radius: 20px;       
+    
+  }
 /* Media Queries */
 @media(max-width:1200px) {
     body {
