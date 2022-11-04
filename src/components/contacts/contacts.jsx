@@ -55,7 +55,7 @@ const Contacts = () => {
         <div id="wave4" className="wave"></div>
       </div>
       <Slide>
-        <h1 className="">CONTACTS</h1>
+        <h1 className="">CONTACTS</h1>´
         <div className="container-contact">
           <form onSubmit={(e) => sendEmail(e)}>
             <input
@@ -83,6 +83,7 @@ const Contacts = () => {
             ></textarea>
             <input className="button-form" type="submit" value="Enviar" />
           </form>
+
           <div className="box-links">
             <div className="email lnk">
               <a href="mailto:maycondouglaszzlk@gmail.com">
@@ -126,8 +127,8 @@ const Contacts = () => {
             </div>
           </div>
         </div>{" "}
-        <span id="copy">© Maycon Douglas. All rights reserved.</span>
       </Slide>
+      <span id="copy">© Maycon Douglas. All rights reserved.</span>
     </footer>
   );
 };

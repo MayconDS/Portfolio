@@ -1,4 +1,5 @@
 import { typeWrite } from "../typewriter";
+import { Fade } from "react-awesome-reveal";
 
 import astronaut from "../../utils/bgs/header-img.svg";
 
@@ -6,16 +7,19 @@ import "./home.css";
 const Home = () => {
   return (
     <section id="#" className="home">
-      <img id="astronaut" src={astronaut} alt="" srcset="" />
       <div className="shadow-horizontal"></div>
+      <Fade>
+        <img id="astronaut" src={astronaut} alt="" srcset="" />
+      </Fade>
+
       <div className="profile">
-        <h1 className="typewriter">
+        <h1>
           Olá
           <br /> eu sou <span>Maycon</span>,
           <br />
           Desenvolvedor Web
         </h1>
-        <p>
+        <p className="typewriter">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
           repellendus voluptatem vero illo maxime labore sint excepturi repellat
           iusto facilis sapiente, repudiandae hic dolorum, recusandae vitae

@@ -179,6 +179,7 @@ form .button-form:hover {
     }
 }
 @media(max-width: 500px) {
+   
     .box-links {
         width: 80%;
     }
