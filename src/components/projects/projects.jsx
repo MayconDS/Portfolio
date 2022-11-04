@@ -7,9 +7,9 @@ const Projects = () => {
   return (
     <section id="projects" className="projects">
       <div className="container">
-        <h1 className="visible" id="title-project">
-          PROJECTS
-        </h1>
+        <Slide>
+          <h1 id="title-project">PROJECTS</h1>
+        </Slide>
         <Slide>
           <div className="box-grid-projects">
             {projects.map((item) => (
