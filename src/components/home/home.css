@@ -52,8 +52,16 @@
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
+    display: flex;
+   
+    
+    gap: 10px;
   }
-  
+  .links a svg {
+   
+    width: 18px;
+    height: 18px
+  }
   .links a:hover {
     background: rgb(61, 106, 255);
     box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);

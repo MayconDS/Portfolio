@@ -1,8 +1,10 @@
-import { typeWrite } from "../typewriter";
 import { Fade } from "react-awesome-reveal";
-import cv from "../../utils/cv.pdf";
 
+import { FiDownload } from "react-icons/fi";
+
+import { typeWrite } from "../typewriter";
 import astronaut from "../../utils/imgs/header-img.svg";
+import cv from "../../utils/cv.pdf";
 
 import "./home.css";
 const Home = () => {
@@ -27,7 +29,7 @@ const Home = () => {
       </div>
       <div className="links">
         <a download href={cv}>
-          Baixar CV
+          <FiDownload /> Baixar CV
         </a>
         <a target="_blank" href="https://wa.me/+5584981916377">
           Vamos conversar
