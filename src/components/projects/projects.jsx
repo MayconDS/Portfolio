@@ -13,12 +13,13 @@ const Projects = () => {
         <Slide>
           <div className="box-grid-projects">
             {projects.map((item, id) => (
-              <CardProject
-                id={item.id}
-                description={item.description}
-                img={item.img}
-                title={item.title}
-              />
+              <div key={id}>
+                <CardProject
+                  description={item.description}
+                  img={item.img}
+                  title={item.title}
+                />
+              </div>
             ))}
           </div>
         </Slide>

@@ -12,7 +12,7 @@ const Home = () => {
     <section id="#" className="home">
       <div className="shadow-horizontal"></div>
       <Fade>
-        <img id="astronaut" src={astronaut} alt="" srcset="" />
+        <img id="astronaut" src={astronaut} alt="" srcSet="" />
       </Fade>
 
       <div className="profile">
