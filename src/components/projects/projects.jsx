@@ -10,17 +10,17 @@ const Projects = () => {
         <h1 className="visible" id="title-project">
           PROJECTS
         </h1>
-        <div className="box-grid-projects visible">
-          {projects.map((item) => (
-            <Slide direction="left" cascade={true}>
+        <Slide>
+          <div className="box-grid-projects">
+            {projects.map((item) => (
               <CardProject
                 description={item.description}
                 img={item.img}
                 title={item.title}
               />
-            </Slide>
-          ))}
-        </div>
+            ))}
+          </div>
+        </Slide>
       </div>
     </section>
   );
