@@ -1,7 +1,7 @@
 
 
 #navbar {
-    outline: 0;
+  
     width: 290px;
     height: 52px;
     justify-content: center;
@@ -21,17 +21,17 @@
 }
 
 a {
-    outline: 0;
+   
     text-decoration: none;
 }
 a svg{
-    outline: 0;
+   
     color: white;
     width: 18px;
     height: 18px;
 } 
 ul {
-    outline: 0;
+   
     list-style: none;
     display: flex;
     align-items: center;
@@ -39,17 +39,17 @@ ul {
     gap: 27px;
 }
 #navbar a {
-    outline: 0;
+ 
     background: transparent;
     padding: 0.5rem;
     border-radius: 50%;
     display: flex;
-  
+    transition: all ease-in-out 0.3s;
     font-size: 1.1rem;
   }
 
   #navbar a:hover {
-    outline: 0;
+ 
     background: rgb(61, 106, 255);
   }
   

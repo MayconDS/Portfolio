@@ -20,10 +20,8 @@ const Home = () => {
           Desenvolvedor Web
         </h1>
         <p className="typewriter">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
-          repellendus voluptatem vero illo maxime labore sint excepturi repellat
-          iusto facilis sapiente, repudiandae hic dolorum, recusandae vitae
-          neque cumque molestiae doloribus?
+          Me chamo Maycon Douglas, mas pode me chamar de <span>Mike</span>,
+          tenho 17 anos e sou apaixonado por tecnologia e astronomia
         </p>
       </div>
       <div className="links">
