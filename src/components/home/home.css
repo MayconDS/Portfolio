@@ -176,3 +176,13 @@
         background-size: 2265px;
     }
 }
+
+@media(max-width:444px) {
+    .home {
+        background-size: 2265px;
+    }
+    .links a  {
+        
+        font-size: 13px;
+    }
+}
