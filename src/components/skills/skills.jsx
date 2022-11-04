@@ -14,7 +14,9 @@ const Skills = () => {
       <div className="container">
         <Slide>
           <h1 id="title-skills">SKILLS</h1>
-          <div className="box-grid-2">
+        </Slide>
+        <div className="box-grid-2">
+          <Slide>
             <div className="frontend box-skills ">
               <h1>Frontend Development</h1>
               <div className="experience">
@@ -59,6 +61,8 @@ const Skills = () => {
                 </div>
               </div>
             </div>
+          </Slide>
+          <Slide delay={50}>
             <div className="backend box-skills">
               <h1>Backend Development</h1>
               <div className="experience">
@@ -85,8 +89,8 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </Slide>
+          </Slide>
+        </div>
       </div>
     </section>
   );

@@ -42,15 +42,15 @@ ul {
     padding: 0.5rem;
     border-radius: 50%;
     display: flex;
-    color: var(--color-light);
+  
     font-size: 1.1rem;
   }
 
   #navbar a:hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgb(61, 106, 255);
   }
   
   #navbar a:active {
-    background: #242459;
+    background: rgb(61, 106, 255);
     color: #1f1f38;
   }

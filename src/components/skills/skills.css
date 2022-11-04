@@ -28,6 +28,7 @@
 .skills .box-skills {
     background-color: rgb(29, 29, 29);
     padding: 5rem 8rem;
+    height: 29rem;
     border-radius: 12px;
     gap: 30px;
     align-items: center;
