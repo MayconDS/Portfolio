@@ -1,7 +1,8 @@
 import { typeWrite } from "../typewriter";
 import { Fade } from "react-awesome-reveal";
+import cv from "../../utils/cv.pdf";
 
-import astronaut from "../../utils/bgs/header-img.svg";
+import astronaut from "../../utils/imgs/header-img.svg";
 
 import "./home.css";
 const Home = () => {
@@ -25,8 +26,12 @@ const Home = () => {
         </p>
       </div>
       <div className="links">
-        <a href="">Baixar CV</a>
-        <a href="">Vamos conversar</a>
+        <a download href={cv}>
+          Baixar CV
+        </a>
+        <a target="_blank" href="https://wa.me/+5584981916377">
+          Vamos conversar
+        </a>
       </div>
     </section>
   );
