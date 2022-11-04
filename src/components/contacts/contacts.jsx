@@ -56,7 +56,8 @@ const Contacts = () => {
       </div>
       {window.innerWidth > 650 ? (
         <Slide>
-          <h1 className="">CONTACTS</h1>´
+          <h1 className="">CONTACTS</h1>
+          <h4>Entre em contato</h4>
           <div className="container-contact">
             <form onSubmit={(e) => sendEmail(e)}>
               <input
@@ -132,7 +133,8 @@ const Contacts = () => {
         </Slide>
       ) : (
         <>
-          <h1 className="">CONTACTS</h1>´
+          <h1 className="">CONTACTS</h1>
+          <h4>Entre em contato</h4>
           <div className="container-contact">
             <form onSubmit={(e) => sendEmail(e)}>
               <input

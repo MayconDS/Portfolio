@@ -13,6 +13,11 @@
     gap: 30px;
     align-items: center;
 }
+ h4 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
 form {
     width: 100%;
     display: flex;
