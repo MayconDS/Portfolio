@@ -11,9 +11,10 @@ const Projects = () => {
           <h1 id="title-project">PROJECTS</h1>
         </Slide>
         <Slide>
-          <div id={projects.id} className="box-grid-projects">
+          <div className="box-grid-projects">
             {projects.map((item, id) => (
               <CardProject
+                id={item.id}
                 description={item.description}
                 img={item.img}
                 title={item.title}

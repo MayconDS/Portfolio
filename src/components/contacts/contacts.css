@@ -100,7 +100,7 @@ form .button-form:hover {
 
 .contacts .wave {
     position: absolute;
-    background: url('../../utils/bgs/wave.png');
+    background: url('../../utils/imgs/wave.png');
     height: 100px;
     width:100%;
     top: -100px;
