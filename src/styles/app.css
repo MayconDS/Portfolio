@@ -8,11 +8,9 @@ body {
 
 html, body {
     overflow-x: hidden;
-  }
-html {
     scroll-behavior: smooth;
-    
-}
+  }
+
 section {
     height: 100vh;
 }
