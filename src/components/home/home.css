@@ -189,7 +189,7 @@
     }
 }
 
-@media(max-width:444px) {
+@media(max-width:446px) {
     .home {
         background-size: 2265px;
     }
@@ -199,20 +199,3 @@
     }
 }
 
-@media(max-width:414px) {
-    .links svg {
-        margin-top: -5px;
-        
-    }
-    .links a  {
-       align-items: center;
-        font-size: 10px;
-    }
-}
-@media(max-width:376px) {
-   
-    .links a  {
-       align-items: center;
-        font-size: 8px;
-    }
-}
