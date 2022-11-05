@@ -22,7 +22,19 @@
 /* Media Queries */
 
 @media(max-width: 800px) {
+
+    .box-grid-projects {
+        grid-template-columns: 1fr 1fr
+      
+    }
     
+
+}
+
+@media(max-width: 500px) {
+    .box-grid-projects {
+       margin-left: 10px;
+    }
     .box-grid-projects {
         grid-template-columns: 1fr 1fr
       
