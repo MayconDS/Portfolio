@@ -1,0 +1,98 @@
+.card-certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+}
+.card-certificate img {
+ 
+    width: 400px;
+    height: 320px;
+}
+.certificate h1 {
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgb(61, 106, 255);;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    gap: 30px;
+}
+.card-certificate a {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+  }
+
+
+
+
+  .card-certificate a:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .card-certificate a:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+
+@media(max-width: 1300px) {
+    .card-certificate img {
+        width: 380px
+    }
+}
+@media(max-width: 1200px) {
+    .card-certificate img {
+        width: 340px;
+        height: 280px;
+    }
+}
+@media(max-width: 1100px) {
+    .card-certificate img {
+        width: 320px;
+        height: 280px;
+    }
+}
+@media(max-width: 1000px) {
+    .certificate {
+
+    height: 100%;
+        
+    }
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+    .card-certificate img {
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@media(max-width:700px) {
+    .card-certificate img {
+        width: 400px;
+        height: 320px;
+    }
+}
