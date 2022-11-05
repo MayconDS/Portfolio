@@ -198,3 +198,13 @@
         font-size: 12px;
     }
 }
+
+@media(max-width:414px) {
+    .links svg {
+        margin-top: -5px;
+    }
+    .links a  {
+       align-items: center;
+        font-size: 11px;
+    }
+}
