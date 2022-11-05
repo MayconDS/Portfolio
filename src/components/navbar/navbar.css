@@ -26,7 +26,7 @@ a {
 }
 a svg{
    
-    color: white;
+    color: rgb(255, 255, 255);
     width: 18px;
     height: 18px;
 } 
@@ -39,7 +39,7 @@ ul {
     gap: 27px;
 }
 #navbar a {
- 
+
     background: transparent;
     padding: 0.5rem;
     border-radius: 50%;

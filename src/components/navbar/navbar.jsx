@@ -2,11 +2,12 @@ import "./navbar.css";
 
 import {
   AiOutlineHome,
-  AiOutlineUser,
   AiOutlineCode,
   AiOutlinePhone,
   AiOutlineFire,
 } from "react-icons/ai";
+
+import { TbCertificate } from "react-icons/tb";
 
 import { useState } from "react";
 
@@ -41,6 +42,15 @@ const Navbar = () => {
             className={activeNav === "#projects" ? "active" : ""}
           >
             <AiOutlineFire />
+          </a>
+        </li>
+        <li>
+          <a
+            href="#certificate"
+            onClick={() => setActiveNav("#certificate")}
+            className={activeNav === "#certificate" ? "active" : ""}
+          >
+            <TbCertificate />
           </a>
         </li>
         <li>

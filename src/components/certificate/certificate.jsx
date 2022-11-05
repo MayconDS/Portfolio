@@ -6,7 +6,7 @@ import "./certificate.css";
 
 const Certificate = () => {
   return (
-    <section className="certificate">
+    <section id="certificate" className="certificate">
       <div className="container">
         <h1>CERTIFICADOS</h1>
         <div className="grid-3">
