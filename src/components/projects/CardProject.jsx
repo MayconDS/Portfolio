@@ -2,7 +2,7 @@ import "./CardProject.css";
 import { FiGithub } from "react-icons/fi";
 import { IoRocketOutline } from "react-icons/io5";
 
-const CardProject = ({ img, title, description }) => {
+const CardProject = ({ img, title, repositorie, deploy }) => {
   return (
     <div className="card-project">
       <div className="thumb">
@@ -15,12 +15,12 @@ const CardProject = ({ img, title, description }) => {
 
       <div className="btns">
         <div className="demo button">
-          <a className="button-content" href="">
+          <a target="_blank" className="button-content" href={deploy}>
             <IoRocketOutline /> DEMO
           </a>
         </div>
         <div className="github button">
-          <a className="button-content" href="">
+          <a target="_blank" className="button-content" href={repositorie}>
             <FiGithub /> GITHUB
           </a>
         </div>
