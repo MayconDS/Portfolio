@@ -62,6 +62,18 @@
     width: 18px;
     height: 18px
   }
+.links #full {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    
+}
+.links #full:hover {
+    opacity: 0.95;
+}
+
   .links a:hover {
     background: rgb(61, 106, 255);
     box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);

@@ -28,7 +28,7 @@ const Home = () => {
         </p>
       </div>
       <div className="links">
-        <a download href={cv}>
+        <a id="full" download href={cv}>
           <FiDownload /> Baixar CV
         </a>
         <a target="_blank" href="https://wa.me/+5584981916377">
