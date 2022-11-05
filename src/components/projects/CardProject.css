@@ -103,21 +103,36 @@
 }
 
 /* Media Queries */
-
-@media(max-width: 760px) {
-  .card-project {
-    width: 100%;
-  }
-}
-@media(max-width: 600px) {
-  .thumb img { width:340px;
-    height: 180px}
+@media(max-width: 640px) {
+  .thumb img { width:280px;
+    height: 110px}
    .card-project {
-    width: 340px;
+    width: 102%;
+    height: 100%;
+   } 
+  }
+@media(max-width: 600px) {
+  .thumb img { width:220px;
+    height: 110px}
+   .card-project {
+    width: 220px;
     height: 100%;
    } 
    .button a {
-    padding: 3px 15px;
+    padding: 1px 5px;
+   }
+   
+}
+
+@media(max-width: 500px) {
+  .thumb img { width:200px;
+    height: 110px}
+   .card-project {
+    width: 205px;
+    height: 100%;
+   } 
+   .button a {
+    padding: 1px 2px;
    }
    
 }

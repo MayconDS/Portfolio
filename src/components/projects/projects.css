@@ -22,8 +22,9 @@
 /* Media Queries */
 
 @media(max-width: 800px) {
+    
     .box-grid-projects {
-        grid-template-columns: 1fr 
+        grid-template-columns: 1fr 1fr
       
     }
     
