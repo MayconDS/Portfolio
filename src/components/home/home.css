@@ -209,3 +209,10 @@
         font-size: 10px;
     }
 }
+@media(max-width:376px) {
+   
+    .links a  {
+       align-items: center;
+        font-size: 8px;
+    }
+}
