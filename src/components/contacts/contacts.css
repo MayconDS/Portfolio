@@ -4,7 +4,7 @@
     flex-direction: column;;
     height: 100%;
     position: relative;
-   
+   padding-bottom: 5rem;
     align-items: center;
     background-color: #3586FF; 
 }
@@ -96,6 +96,7 @@ form .button-form:hover {
 #copy {
     color: white  ;
     font-size: 12px;
+    
 }
 
 .contacts .wave {
