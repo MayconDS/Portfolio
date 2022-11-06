@@ -96,3 +96,9 @@
         height: 320px;
     }
 }
+@media(max-width:430px) {
+    .card-certificate img {
+        width: 360px;
+        height: 280px;
+    }
+}
