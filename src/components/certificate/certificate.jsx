@@ -10,11 +10,11 @@ const Certificate = () => {
   return (
     <section id="certificate" className="certificate">
       <div className="container">
-        <Slide direction="up">
+        <Slide>
           {" "}
           <h1>CERTIFICADOS</h1>
         </Slide>
-        <Slide direction="up">
+        <Slide>
           <div className="grid-3">
             <div className="card-certificate">
               <img src={cfJavascript} alt="" />
