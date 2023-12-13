@@ -1,0 +1,219 @@
+.home {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.home::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+
+  left: 0;
+  opacity: 40%;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+  content: "";
+  background-image: url("./noise.png");
+}
+.home::before {
+  content: "";
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+
+  top: -600px;
+  transform: translate(50%);
+  animation: 15s ease 0s infinite normal none running jHa-dKe;
+  will-change: box-shadow;
+  opacity: 0.6;
+}
+
+@keyframes jHa-dKe {
+  0% {
+    box-shadow: #5f5f5f 0px 0px 300px 150px;
+  }
+
+  25% {
+    box-shadow: #5f5f5f 10px 6px 320px 300px;
+  }
+  50% {
+    box-shadow: #5f5f5f -10px -6px 340px 350px;
+  }
+  75% {
+    box-shadow: #5f5f5f -20px 6px 335px 200px;
+  }
+  100% {
+    box-shadow: #5f5f5f -6px 2px 320px 150px;
+  }
+}
+.home > .bg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: -2;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  color: black;
+  width: 100%;
+  right: 0;
+  background-color: #a82427;
+  clip-path: polygon(60% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.home > .bg > h1 {
+  font-size: 100px;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  left: 55px;
+
+  font-weight: 800;
+  position: absolute;
+  line-height: 75px;
+  color: rgb(15, 14, 14);
+  font-family: "Montserrat";
+}
+.home > .bg > span {
+  margin-top: 110px;
+  left: 378px;
+
+  position: absolute;
+
+  color: rgb(15, 14, 14);
+  font-family: "Montserrat";
+}
+.home > .container {
+  padding: 24px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home > .container > .animation {
+  padding: 0 30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: -3;
+  align-items: center;
+
+  font-family: "Montserrat";
+}
+
+.home > .container > .animation > .presentation > .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.home > .container > .animation > .presentation > .profile > h3 {
+  color: rgb(173, 173, 173);
+}
+.home > .container > .animation > .presentation > .profile > .name {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.home > .container > .animation > .presentation > .profile > .name > h1 {
+  font-size: 100px;
+  margin-top: 12px;
+  letter-spacing: 2px;
+
+  font-weight: 800;
+  line-height: 75px;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #a82427 100%, #141414 50%);
+}
+
+.home > .container > .animation > .presentation > .profile > .name > span {
+  color: rgb(77, 77, 77);
+}
+.home > .container > .animation > .presentation > .profile > button {
+  max-width: 160px;
+  margin-top: 10px;
+  background: transparent;
+  font-family: "Montserrat";
+  border: none;
+  color: white;
+  font-weight: 700;
+  display: none;
+}
+
+.home > .container > .socials {
+  position: absolute;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  justify-content: center;
+  gap: 4px;
+}
+.home > .container > .socials > a {
+  font-size: 24px;
+  color: #c5c4c4;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .home::before {
+    animation: none;
+  }
+  .home > .light {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to bottom right,
+      #ffffff -350%,
+      transparent 40%
+    );
+  }
+}
+
+@media (max-width: 556px) {
+  .home > .bg {
+    clip-path: polygon(76% 0, 100% 0, 100% 100%, 50% 100%);
+  }
+
+  .home > .container > .animation {
+    padding: 0px;
+  }
+
+  .home > .bg > h1 {
+    font-size: 70px;
+    left: 25px;
+  }
+  .home > .bg > span {
+    left: 206px;
+  }
+  .home > .container > .animation > .presentation > .profile > .name > h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 390px) {
+  .home > .bg {
+    clip-path: polygon(82% 0, 100% 0, 100% 100%, 30% 100%);
+  }
+
+  .home > .container > .animation {
+    padding: 0px;
+  }
+  .home > .bg > h1 {
+    font-size: 50px;
+    left: 25px;
+  }
+  .home > .bg > span {
+    left: 110px;
+  }
+  .home > .container > .animation > .presentation > .profile > .name > h1 {
+    font-size: 50px;
+  }
+}

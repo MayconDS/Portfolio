@@ -1,0 +1,65 @@
+.certificates {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.certificates::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 40%;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+  content: "";
+  background-image: url("./noise.png");
+}
+
+.certificates > .light {
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(to bottom right, #ffffff -350%, transparent 40%);
+}
+
+.certificates > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  height: 100%;
+  gap: 48px;
+}
+.certificates > .container > .animation > h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 60px;
+
+  color: #ffffff;
+  opacity: 20%;
+  letter-spacing: 2px;
+}
+.certificates > .container > .certificates-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 1;
+}
+
+@media (max-width: 1000px) {
+  .certificates {
+    height: auto;
+  }
+  .certificates > .container > .certificates-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .certificates > .container > .animation > h1 {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,122 @@
+.about {
+  height: 80%;
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 40%;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+  content: "";
+
+  background-image: url("./noise.png");
+}
+
+.about > .light {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to bottom right, #ffffff -350%, transparent 40%);
+}
+.about > .container {
+  padding: 24px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 42px;
+}
+.about > .container > .animation > h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  opacity: 20%;
+}
+.about > .container > .box {
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.about > .container > .box > .logo {
+  display: flex;
+  flex-direction: column;
+}
+.about > .container > .box > .logo > .animation #mi {
+  font-size: 90px;
+  height: 80px;
+  color: #a82427;
+  font-family: "Anton";
+  letter-spacing: 2px;
+}
+.about > .container > .box > .logo > .animation #ke {
+  font-size: 99px;
+
+  color: #b4b2b2;
+  font-family: "Anton";
+  letter-spacing: 2px;
+}
+.about > .container > .box > .about-me {
+  max-width: 50%;
+}
+.about > .container > .box > .about-me > .animation > p {
+  margin-top: 25px;
+  color: rgb(104, 104, 104);
+  font-size: 18px;
+}
+.about > .container > .box > .about-me > .animation > p > span {
+  color: #a82427;
+}
+
+@media (max-width: 1025px) {
+  .about > .container > .box > .about-me {
+    max-width: 100%;
+  }
+}
+@media (max-width: 670px) {
+  .about > .container > .box {
+    align-items: center;
+  }
+  .about > .container > .box > .about-me > .animation > p {
+    margin-top: 0;
+    text-align: justify;
+  }
+}
+@media (max-width: 540px) {
+  .about > .container {
+    padding: 24px 8px;
+  }
+  .about > .container > .box > .logo {
+    flex-direction: row;
+  }
+  .about > .container > .box > .logo > .animation > #mi {
+    font-size: 99px;
+  }
+
+  .about > .container > .box {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+  }
+  .about > .container > .box > .about-me > .animation > p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 350px) {
+  .about {
+    height: auto;
+  }
+}

@@ -1,0 +1,162 @@
+.skills {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.skills::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 40%;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+  content: "";
+  background-image: url("./noise.png");
+}
+.skills > .bg {
+  width: 100%;
+
+  z-index: -1;
+  position: absolute;
+
+  height: 100%;
+  color: black;
+  background-color: #a82427;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.skills > .light {
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(to bottom right, #ffffff -350%, transparent 40%);
+}
+.skills > .light2 {
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(to bottom left, #ffffff -350%, transparent 40%);
+}
+.skills > .container {
+  padding: 32px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+.skills > .container > .animation > h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 60px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #fff 46%, black 50%);
+
+  opacity: 20%;
+  letter-spacing: 1px;
+}
+
+.skills > .container > .boxs {
+  align-items: center;
+  display: flex;
+
+  gap: 48px;
+  width: 100%;
+
+  justify-content: center;
+}
+.skills > .container > .boxs > #languages-box {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  height: 368px;
+  padding-top: 20px;
+  padding-bottom: 36px;
+  padding-left: 36px;
+  padding-right: 36px;
+  gap: 32px;
+  align-items: center;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all ease 0.4s;
+}
+
+.skills > .container > .boxs > .backend > .animation > h1 {
+  font-weight: 900;
+  font-size: 32px;
+  transition: all ease 0.4s;
+  color: rgb(27, 27, 27);
+}
+.skills > .container > .boxs > .backend > .backend-skills {
+  gap: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.skills > .container > .boxs > .backend > .backend-skills #language {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgb(27, 27, 27);
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 16px;
+  transition: all ease 0.4s;
+}
+.skills > .container > .boxs > .backend > .backend-skills #language > svg {
+  font-size: 24px;
+}
+/* FRONTEND */
+
+.skills > .container > .boxs > .frontend > .animation > h1 {
+  font-weight: 900;
+  font-size: 32px;
+  transition: all ease 0.4s;
+  color: #bebebe;
+}
+.skills > .container > .boxs > .frontend > .frontend-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 10px;
+}
+.skills > .container > .boxs > .frontend > .frontend-skills #language {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #bebebe;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 16px;
+  transition: all ease 0.4s;
+}
+.skills > .container > .boxs > .frontend > .frontend-skills #language > svg {
+  font-size: 24px;
+}
+@media (max-width: 882px) {
+  .skills {
+    height: auto;
+  }
+  .skills > .bg {
+    clip-path: polygon(0 57.5%, 100% 57.5%, 100% 100%, 0 100%);
+  }
+  .skills > .container > .boxs {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .skills > .container > .animation > h1 {
+    background-image: linear-gradient(to right, #fff 100%, black 0%);
+  }
+}
+@media (max-width: 400px) {
+  .skills > .container > .boxs > #languages-box > .frontend-skills {
+    grid-template-columns: 1fr;
+  }
+  .skills > .container > .boxs > #languages-box > .backend-skills {
+    grid-template-columns: 1fr;
+  }
+}

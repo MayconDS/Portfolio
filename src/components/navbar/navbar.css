@@ -1,0 +1,73 @@
+.navbar {
+  padding: 0 24px;
+  display: flex;
+  color: #fff;
+  align-items: Center;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  height: 64px;
+  z-index: 2;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar > .sidebar {
+  position: absolute;
+  right: 20px;
+
+  display: none;
+}
+.navbar > .sidebar > .hamburger {
+  font-size: 25px;
+  cursor: pointer;
+}
+.navbar > .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.navbar > .logo {
+  text-decoration: none;
+  color: #fff;
+}
+.navbar > .logo > #mi {
+  font-size: 23.5px;
+  font-family: "Rubik", sans-serif;
+
+  margin-left: -0.6px;
+  font-weight: bold;
+}
+.navbar > .logo > #ke {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  margin-top: -9.5px;
+
+  font-weight: bold;
+}
+
+.navbar > nav > ul {
+  display: flex;
+  gap: 20px;
+}
+.navbar > nav > ul > li {
+  letter-spacing: 2.2px;
+  list-style: none;
+}
+.navbar > nav > ul > li > a {
+  text-decoration: none;
+  color: #b6b5b5;
+}
+
+@media (max-width: 735px) {
+  .navbar > nav > ul > li > a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar > nav {
+    display: none;
+  }
+  .navbar > .sidebar {
+    display: block;
+  }
+}

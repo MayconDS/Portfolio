@@ -1,0 +1,45 @@
+.main-card {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 320px;
+  max-height: 380px;
+}
+
+.main-card > .shadow {
+  position: absolute;
+  width: 100%;
+
+  height: 100%;
+  bottom: 0;
+
+  background: linear-gradient(to top, #1d1f23 0%, transparent 30%);
+}
+
+.main-card > img {
+  transition: all ease 0.25s;
+
+  width: 100%;
+  border-radius: 4px;
+  height: 100%;
+}
+
+@media (max-width: 1010px) {
+  .main-card {
+    max-width: 280px;
+    max-height: 340px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-card {
+    max-width: 240px;
+    max-height: 300px;
+  }
+}
+@media (max-width: 780px) {
+  .main-card {
+    max-width: 320px;
+    max-height: 380px;
+  }
+}

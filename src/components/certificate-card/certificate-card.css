@@ -1,0 +1,45 @@
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.certificate-card > img {
+  max-width: 400px;
+  max-height: 310px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 16px 28px -4px rgba(0, 0, 0, 0.74);
+  -webkit-box-shadow: 1px 16px 28px -4px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: 1px 16px 28px -4px rgba(0, 0, 0, 0.74);
+}
+.certificate-card > a {
+  background: transparent;
+  border-radius: 4px;
+  height: 36px;
+  max-width: 200px;
+  border: none;
+  color: #daa557;
+  font-family: "Montserrat";
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all ease-in-out 0.22s;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 4px;
+}
+.certificate-card > a:hover {
+  filter: brightness(1.4);
+}
+
+@media (max-width: 1000px) {
+  .certificate-card > img {
+    max-width: 500px;
+    max-height: 400px;
+  }
+}
