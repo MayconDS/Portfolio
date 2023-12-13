@@ -18,7 +18,7 @@
   pointer-events: none;
   content: "";
 
-  background-image: url("./noise.png");
+  background-image: url(/noise.png);
 }
 
 .about > .light {

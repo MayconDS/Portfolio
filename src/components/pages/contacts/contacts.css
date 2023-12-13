@@ -15,7 +15,7 @@
   mix-blend-mode: soft-light;
   pointer-events: none;
   content: "";
-  background-image: url("./noise.png");
+  background-image: url(/noise.png);
 }
 
 .contacts > .light {
