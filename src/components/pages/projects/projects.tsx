@@ -22,6 +22,13 @@ const Projects = () => {
         "Clone da interface da Netflix desenvolvido em ReactJS, afins de praticar a consulta em Api",
     },
     {
+      title: "CHATLIVE",
+      img: "/CHAT_HIGH.png",
+      demo: "https://chatlive.vercel.app/",
+      github: "https://github.com/MayconDS/chatapp_frontend",
+      description: "Chat em tempo real Desenvolvido em ReactJS com Firebase",
+    },
+    {
       title: "NOOT",
       img: "/NOOT_HIGH.png",
       demo: "https://nootgames.vercel.app",
